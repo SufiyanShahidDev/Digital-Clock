@@ -36,11 +36,16 @@ function showDateTime() {
 
     document.getElementById("date").innerHTML = `${currentDate} ${monName}, ${dayName} ${currentYear}`;
 
+    let timeAm = "AM";
+    let timePm = "PM";
     let hours = now.getHours() % 12;
     let min = now.getMinutes();
     let sec = now.getSeconds();
 
-    document.getElementById("time").innerHTML = `${hours}:${min}:${sec}`;
+    if (hour >= 12) {
+        document.getElementById("time").innerHTML = `${hours}:${min}:${sec} ${timePm}`;
+    } else {
+        document.getElementById("time").innerHTML = `${hours}:${min}:${sec} ${timeAm}`; = `${hours}:${min}:${sec}`;
 
 };
 
