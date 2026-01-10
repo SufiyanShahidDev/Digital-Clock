@@ -46,7 +46,7 @@ function showDateTime() {
     if (hour >= 12) {
         document.getElementById("time").innerHTML = `${hours}:${min}:${sec} ${timePm}`;
     } else {
-        document.getElementById("time").innerHTML = `${hours}:${min}:${sec} ${timeAm}`; = `${hours}:${min}:${sec}`;
+        document.getElementById("time").innerHTML = `${hours}:${min}:${sec} ${timeAm}`;
 
 };
 
