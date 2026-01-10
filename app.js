@@ -38,6 +38,7 @@ function showDateTime() {
 
     let timeAm = "AM";
     let timePm = "PM";
+    let hour = now.getHours();
     let hours = now.getHours() % 12;
     let min = now.getMinutes();
     let sec = now.getSeconds();
