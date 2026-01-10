@@ -1,48 +1,48 @@
 
-function showDateTime() {
-    let now = new Date();
+// function showDateTime() {
+//     let now = new Date();
 
-    let days = [
-        "Sun",
-        "Mon",
-        "Tues",
-        "Wed",
-        "Thur",
-        "Fri",
-        "Sat"
-    ];
+//     let days = [
+//         "Sun",
+//         "Mon",
+//         "Tues",
+//         "Wed",
+//         "Thur",
+//         "Fri",
+//         "Sat"
+//     ];
 
-    let dayName = days[now.getDay()];
+//     let dayName = days[now.getDay()];
 
-    let months = [
-        "Jan",
-        "Feb",
-        "Mar",
-        "Apr",
-        "May",
-        "June",
-        "July",
-        "Aug",
-        "Sep",
-        "Oct",
-        "Nov",
-        "Dec"
-    ];
+//     let months = [
+//         "Jan",
+//         "Feb",
+//         "Mar",
+//         "Apr",
+//         "May",
+//         "June",
+//         "July",
+//         "Aug",
+//         "Sep",
+//         "Oct",
+//         "Nov",
+//         "Dec"
+//     ];
 
-    monName = months[now.getMonth()];
+//     monName = months[now.getMonth()];
 
-    currentDate = now.getDate();
-    currentYear = now.getFullYear();
+//     currentDate = now.getDate();
+//     currentYear = now.getFullYear();
 
-    document.getElementById("date").innerHTML = `${currentDate} ${monName}, ${dayName} ${currentYear}`;
+//     document.getElementById("date").innerHTML = `${currentDate} ${monName}, ${dayName} ${currentYear}`;
 
-    let hours = now.getHours() % 12;
-    let min = now.getMinutes();
-    let sec = now.getSeconds();
+//     let hours = now.getHours() % 12;
+//     let min = now.getMinutes();
+//     let sec = now.getSeconds();
 
 
-};
+// };
 
-showDateTime();
+// showDateTime();
 
-setInterval(showDateTime, 1000);
+// setInterval(showDateTime, 1000);
